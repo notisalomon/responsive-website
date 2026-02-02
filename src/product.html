@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<!-- sidebar -->
+    <nav class="sidebar" aria-label="Sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="product.html" class="active" aria-current="true">Products</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hamburger Menu. Wird im Breitbildmodus versteckt -->
+    <nav class="sidebar">
+        <button class="hamburger" id="nav-button">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="product.html" class="active" aria-current="true">Products</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+<!-- Produkte Seite-->
+<section id="Products" class="Products-Page">
+        <!--Filter-->
+        <header class="topbar">
+            <nav aria-label="Top-Bar">
+                <form class="Filters" aria-label="Filters">
+                    <span>Filter by:</span>
+
+                    <label>
+                        Price
+                        <select name="Price">
+                            <option value="">ALL</option>
+                            <option value="0-1000">0-1000</option>
+                            <option value="1001-10000">1001-10000</option>
+                            <option value="10001-1000000">10001-1000000</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Category
+                        <select name="Category">
+                            <option value="ALL">ALL</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Möbel">Möbel</option>
+                            <option value="Gaming">Gaming</option>
+                        </select>
+                    </label>
+
+                    <button type="submit">Apply</button>
+                </form>
+            </nav>
+        </header>
+
+        <!--Produkte-->
+        <section class="Product-Grid" aria-label="Products">
+            <ul class="Products-List" id="product-list">
+                <p class="loading-msg">Produkte werden geladen...</p>
+            </ul>
+        </section>
+</section>
+    <footer class="Footer">
+        <ul>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/MasterCard.png" alt="Mastercard">
+            </li>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/ApplePay.png" alt="ApplePay">
+            </li>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/SamsungPay.png" alt="SamsungPay">
+            </li>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/Bitcoin.png" alt="Bitcoin">
+            </li>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/24-7.png" alt="24/7 Delivery">
+            </li>
+        </ul><br>
+        &copy; Labinot Sulejmani 2025
+    </footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <nav class="sidebar" aria-label="Sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="form.html" class="active" aria-current="true">Form</a></li>
+        </ul>
+    </nav>
+    <!-- Hamburger Menu. Wird im Breitbildmodus versteckt -->
+    <nav class="sidebar">
+        <button class="hamburger" id="nav-button">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="form.html" class="active" aria-current="true">Form</a></li>
+        </ul>
+    </nav>
+
+<section id="Form" class="Form-Page">
+    <h3 class="Feedback">Let us know, what you think about our onlineshop!</h3>
+    <p>Every Customer is heard! Let us know waht you think about the design and the components of our onlineshop.
+        This helps us improve yourself.</p>
+
+    <form action="#" method="post" id="feedback-form">
+        <div>
+            <label for="comment">Your feedback</label>
+            <textarea id="comment" name="comment" rows="10"></textarea>
+        </div>
+
+        <fieldset class="form-row">
+            <legend>How would you rate our design?</legend>
+            <div role="group" aria-label="Design rating">
+                <label><input type="radio" name="design_rating" value="1"> 1</label>
+                <label><input type="radio" name="design_rating" value="2"> 2</label>
+                <label><input type="radio" name="design_rating" value="3"> 3</label>
+                <label><input type="radio" name="design_rating" value="4"> 4</label>
+                <label><input type="radio" name="design_rating" value="5"> 5</label>
+                <label><input type="radio" name="design_rating" value="6"> 6</label>
+                <label><input type="radio" name="design_rating" value="7"> 7</label>
+                <label><input type="radio" name="design_rating" value="8"> 8</label>
+                <label><input type="radio" name="design_rating" value="9"> 9</label>
+                <label><input type="radio" name="design_rating" value="10"> 10</label>
+            </div>
+            <div class="error-msg" id="error-design" style="color: red; font-size: 12px;"></div>
+        </fieldset>
+
+        <fieldset class="form-row">
+            <legend>How would you rate our components?</legend>
+            <div role="group" aria-label="Components rating">
+                <label><input type="radio" name="comp_rating" value="1"> 1</label>
+                <label><input type="radio" name="comp_rating" value="2"> 2</label>
+                <label><input type="radio" name="comp_rating" value="3"> 3</label>
+                <label><input type="radio" name="comp_rating" value="4"> 4</label>
+                <label><input type="radio" name="comp_rating" value="5"> 5</label>
+                <label><input type="radio" name="comp_rating" value="6"> 6</label>
+                <label><input type="radio" name="comp_rating" value="7"> 7</label>
+                <label><input type="radio" name="comp_rating" value="8"> 8</label>
+                <label><input type="radio" name="comp_rating" value="9"> 9</label>
+                <label><input type="radio" name="comp_rating" value="10"> 10</label>
+            </div>
+            <div class="error-msg" id="error-comp" style="color: red; font-size: 12px;"></div>
+        </fieldset>
+
+        <div class="form-row">
+            <label for="InputName">Name</label>
+            <input id="InputName" name="name" type="text">
+            <div class="error-msg" id="error-name" style="color: red; font-size: 12px;"></div>
+        </div>
+
+        <div class="form-row">
+            <label for="InputEmail">Email</label>
+            <input id="InputEmail" name="email" type="text">
+            <div class="error-msg" id="error-email" style="color: red; font-size: 12px;"></div>
+        </div>
+
+        <div class="form-row">
+            <button type="submit">Senden</button>
+        </div>
+    </form>
+
+    <div id="stats-area">
+        <h4>Feedback Statistik</h4>
+        <div id="stats-output"></div>
+    </div>
+</section>
+
+    <footer class="Footer">
+        <ul>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/MasterCard.png" alt="Mastercard">
+            </li>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/ApplePay.png" alt="ApplePay">
+            </li>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/SamsungPay.png" alt="SamsungPay">
+            </li>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/Bitcoin.png" alt="Bitcoin">
+            </li>
+            <li class="Logo-Box">
+                <img class="Logo-Icon" src="assets/Icons/24-7.png" alt="24/7 Delivery">
+            </li>
+        </ul><br>
+        &copy; Labinot Sulejmani 2025
+    </footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
